@@ -1,0 +1,11 @@
+---
+  - hosts: pp4kfa1
+    tasks:
+    - name: replacing placeholders
+      replace_placeholders:  envfile='172.31.3.231:/rk-tmp/placeholders' outputdir='/rk-tmp'
+
+#    - name: replacing placeholders
+#      command: /etc/ansible/roles/pp-deploy/tasks/replace_placeholders4.py ; /usr/bin/python /etc/ansible/roles/pp-deploy/tasks/replace_placeholders4.py 172.31.3.231:/rk-tmp/placeholders /rk-tmp/
+#      args:
+#         executable: python
+
